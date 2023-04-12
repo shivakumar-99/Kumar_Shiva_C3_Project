@@ -33,4 +33,8 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
+
+    public Long calculateOrder(List<Item> Orders){
+
+    }
 }
