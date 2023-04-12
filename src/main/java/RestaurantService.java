@@ -35,6 +35,11 @@ public class RestaurantService {
     }
 
     public Long calculateOrder(List<Item> Orders){
+        long totalCost= 0;
+        for(int i=0; i<Orders.size();i++){
+            totalCost=totalCost+Orders.get(i).getprice();
+        }
+        return  totalCost;
 
     }
 }
